@@ -36,14 +36,11 @@ In this exercise a new repository will be created and some modifications and dat
 
 <HR>
 
+### 1.1 Create a repository
+
 For this training exercise it will be necessary to create a new repository with the following initial details: 
 
-:warning: Use the first letter of your first name and your first surname for the name of the repository + `-csic-github`. 
-> :radioactive: :bulb: For example: If your name is `Manuel Parra`, your repository name will be:
-> `mparra-csic-github`
-
-
-- Repository name: ``<namesurname>-csic-github``.
+- Repository name: ``github-training``.
 - Repository description: ``Repository for the exercise 1``.
 - Repository scope: ``Public``.
 - Licence: For example select the ``MIT licence``.
@@ -56,23 +53,24 @@ In the following image you can see the options to select for the creation of the
 Add some information to your repository by modyfing the `README.md` file. Use the following text to update the `README.md` file.
 
 ```
-## Reproducibility course at CSIC with GitHub platform.
+## SO-IAA training course: Introduction to Github
 
 This is the working repository for the course exercises.
-In this repository other students of the course will 
-collaborate to complete the content.
+This repository will be used to practise commits, issues, branching and pull requests. 
 
 # Session 1
 
 ## Creating a new repository and adding content
 
-- [x] Created repository
-- [x] Updated content
+- [ ] Created repository
+- [ ] Updated content
 
 ```
 :arrow_right: Commit the change
 
-After including this change, create a folder with the name `data` and add the following data file named `power.csv`, copying and pasting the following content:
+### 1.2 Populate the repository with e data table
+
+Once the README is ready, add the following data file named `power.csv`, copying and pasting the following content:
 
 ```
 date,max,avg,min
@@ -89,14 +87,14 @@ Once this change is made, add a couple more lines of data to the `power.csv` fil
 2021-10-05 15:45,5287.0,4123.0,3952.0
 2021-10-05 16:00,5234.0,4122.0,3965.0
 ```
-
 :arrow_right: Commit the change
 
 :checkered_flag: :checkered_flag: After these steps, you can check the version history. 
 > Could you go back to a previous version of the data table?
 
-# <a name='exercise2-issues'></a>Exercise 2 - Plan your work: Issues
+# <a name='exercise2-issues'></a>Exercise 2 - Plan and manage your work: Issues
 
+### 2.1 Create a text file and populate a list of Github Issues
 
 :arrow_right: Create a file named `observations.txt`. Fill it with these contents:
 
@@ -136,9 +134,13 @@ Once the issues are created, make sure to assign yourself to them and continue w
 
 :bulb: If you want, you can define a Milestone towards the completion of the exercise.
 
+### 3.2 Make commits that satisfy the issues
+
+The open issues is like a ToDo list that tells you what needs to be done. Usually Issues grow with feedback from collaborators or your own insights. This can save you a lot of emails that are out of context. Now, implement the changes suggested in the issues.
+
 :arrow_right: Make the required commits to solve all the issues.
 
-:bulb: If you include the phrase "Closes #123" as part of your commit message, Github will automatically close Issue #123 and will indicate which commit closed it.
+:bulb: If you include the phrase "Closes #123" as part of your commit message, Github will automatically close Issue #123 and will indicate which commit closed it. You can use any of these keywords close, closes, closed, fixes, fixed followed by the commit #id number.
 
 Your corrected file should look like this:
 
@@ -155,49 +157,89 @@ NGC 253          ALMA            115                8
 
 # <a name='exercise3-branches-pr'></a>Exercise 3 - How to manage branches and Pull Requests
 
-###  2.3. <a name='#Exercise3-CollaborateFork'></a>Exercise 3 - Managing branches
-
 :pill: **Aim of this exercise**
 Branches allow you to develop features, fix bugs, or experiment with new ideas in a contained area of your repository isolated from the original repository.
 *The idea is to create one branch, add content and update the original repository with the changes.*
 
 <HR>
 
-In this exercise, one branch will be created. Let's say that this new branch will include new features we want to implement or improve to the existing repository.
+In this exercise, one branch will be created. Let's say that this new branch will include new features we want to implement or improve to the existing repository. Since this work will take a long time, we want to keep it separated from the main repository until we finish the work in progress and the changes are matured.
 
-For this exercise you have to go to the repository *"Forked"* in the previous exercise. 
+### 3.1 Create a new file named `report.tex`
 
-Once in the *Forked* repository we have to add a new branch.
+Go to the repo home page, select `Add file` and create a new file named `report.tex` and fill it with this content:
 
-To do this, create a new branch from the next option on the main screen of your repository and name it **"\<namesurname\>-development"**. 
+```
+\documentclass{article}
+\title{Galaxy Properties Report}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report summarizes key properties of selected galaxies.
+
+\section{Galaxy Data}
+The galaxy \textbf{<Galaxy Name>} is classified as a \textit{<Type>} galaxy. 
+It is located at a distance of <Distance> Mpc, with a redshift of <Redshift>.
+
+\end{document}
+```
+:arrow_right: You have work to do! First, create a new issue and assign yourself to it. Mention that you need to fill relevant information for a publication you are working on.
+
+
+### 3.2 Create a new branch `update-galaxy-data`.
+
+In the repository main page, click the buttom on the top left labelled as `main`. In the search box write **`update-galaxy-data`** and then press "Create branch update-galaxy-data from main".
 
 ![exercise example 3](./media/exercise3.1.png)
-
 
 You will see that when you select this icon, all the available branches will appear and you can switch between them to make changes in each one.
 
 ![exercise example 3](./media/exercise3.3.png)
 
-Now we are going to switch to the **"\<namesurname\>-development"** branch and to modify the `README.md` file, adding the following lines to the end of it:
+:bulb: Note that the repository contents and files may be different for each branch.
 
-```
-# Session 1: Exercises 3 from <namesurname>
-- Created a new branch for development.
-```
+### 3.3 Modify the file `report.tex` inside the branch `update-galaxy-data`
 
-:warning: In order to add this text, within the `<namesurname>` string, use the first letter of your first name and your first surname. 
-> :radioactive: :bulb: For example: If your name is `Manuel Parra`, your text will be:
-> ```
-># Session 1: Exercises 3 from mparra
->Created a new branch for development.
+Now we are going to switch to the **`update-galaxy-data`** branch and to modify the `report.tex` file. Replace placeholders (\<Galaxy Name\>, \<Type\>, \<Distance\>, \<Redshift\>) with real data for a galaxy of your choice (e.g., "NGC 4321," "Spiral," "16.8," "0.007").
 
-Once this is done, we are going to merge the changes from the **"\<namesurname\>-development"** branch with the main branch. To do this, click on `view branches` and then on `view all branches`:
+:arrow_right: Create a commit to modify the file. Write an informative commit message.
+
+### 3.4 Prepare the pull request
+
+Once this is done, we are going to merge the changes from the **`update-galaxy-data`** branch with the **`main`** branch.
+
+You will notice that in the main repository there will be a warning indicating that a branch has been modified and suggesting you to "Compare and pull request". This will take you directly to initiate the pull request. When there are many active branches, it is safer to navigate to the relevant branch. To do this, click on `view branches` and then on `view all branches`:
 
 ![exercise example 3](./media/exercise3.4.png)
 
-From here we can merge the changes made in the development branch with the main branch and original repository. Click on the `New pull request` button to do this. 
+From here we can merge the changes made in the development branch with the main branch and original repository. Click on the `New pull request` button to do this.
 
-🏁 🏁 Soon your changes will be accepted by the repository owner.
+A Pull Request has a title, which should be clear and informative, and a description that explains the nature of the changes. This is important when collaborating with other people (remember, consider the future you as a collaborator).
+
+:arrow_right: Create the Pull Request
+
+:bulb: Note the message next to the green buttom Open at the top: "\<your user\> wants to merge 1 commit into main from update-galaxy-data". This is important to keep track of the origin and destination of the PR.
+
+:arrow_right: Navigate to the "Pull Requests" tab and confirm that your PR is there and it is Open
+
+### 3.4 Merge pull request
+
+Inside the Pull Request, Github will verify that there are no conflicts (i.e., that nobody else modified the same part of the file(s) you modified inside the branch). Then you should see the message "This branch has no conflicts with the base branch.  Merging can be performed automatically". 
+
+:arrow_right: Press merge pull request
+
+:arrow_right: Press Confirm merge
+
+Now your changes leave in the main repository, indicating that they are mature and ready to be seen by everyone. 
+
+:bulb: since all commits are not part of the main repository, you can delete the branch if you will not need it anymore.
+
+:arrow_right: Navigate to the "Pull Requests" tab and confirm that your PR is now Closed.
 
 
 # <a name='exercise4-collaborate-fork'></a>Exercise 4 - Collaborate in a repo. Fork a repository
