@@ -1,26 +1,16 @@
 # Repository management and collaborative science platforms:  GitHub
 
-*Objectives of this session:*
-
-- To create a repository and include the basic information.
-- To know in detail the version history of the repository.
-- To manage and compare the versions of the files in the repository.
-- To manage different branches for a repository.
-- To know what are fork and pull request on repositories.
-- To collaborate and to share with other members in a repository.
-- To learn about other features to improve the work with repositories.
-
 **Table of contents**
 <HR>
 
 <!-- vscode-markdown-toc -->
 * 1. [Session content](#Sessioncontent)
-	* 1.1. [Creating a new repository and configure the main options](#Creatinganewrepositoryandconfigurethemainoptions)
-	* 1.2. [Adding content to our repository](#Addingcontenttoourrepository)
-	* 1.3. [Working with the version history](#Workingwiththeversionhistory)
-	* 1.4. [Forking a repository and creating a Pull Request](#ForkingarepositoryandcreatingaPullRequest)
-	* 1.5. [Adding different branches to your repository](#Addingdifferentbranchestoyourrepository)
-	* 1.6. [Collaborating with other users and reposositories](#Collaboratingwithotherusersandreposositories)
+        * 1.1. [Creating a new repository and configure the main options](#Creatinganewrepositoryandconfigurethemainoptions)
+        * 1.2. [Adding content to our repository](#Addingcontenttoourrepository)
+        * 1.3. [Working with the version history](#Workingwiththeversionhistory)
+        * 1.4. [Collaborating with other users and repositories](#Collaboratingwithotherusersandrepositories)
+        * 1.5. [Adding different branches to your repository](#Addingdifferentbranchestoyourrepository)
+        * 1.6. [Forking a repository and creating a Pull Request](#ForkingarepositoryandcreatingaPullRequest)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -30,7 +20,7 @@
 
 <HR>
 
-**Pre-requisites:**
+**Pre-requisites. Create a Github account:**
 
 GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
@@ -104,7 +94,7 @@ We will see the initial screen of our repository and we will explain each sectio
 ![practice example 1](./media/practice1.11.jpg) 
 
 
-###  1.2. <a name='Addingcontenttoourrepository'></a>Adding content to our repository
+###  1.2. <a name='Addingcontenttoourrepository'></a>Adding content to our repository. Commits.
 
 A `commit` is like a snapshot of all the files in your project at a particular point in time.
 
@@ -199,98 +189,7 @@ In this list we can review what changes we have made during the lifetime of the 
 
 :three: See the status of the repository at this point.
 
-
-###  1.4. <a name='ForkingarepositoryandcreatingaPullRequest'></a>Forking a repository and creating a Pull Request
-
-:bulb: A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
-
-*Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.*
-
-Two options with Fork:
-
-- :construction_worker_woman: Propose changes to someone else's project. For example, you can use forks to propose changes related to fixing a bug or an improvement or new documentation, etc.
-- :fireworks: Use someone else's project as a starting point for your own idea. Open source software is based on the idea that by sharing code, we can make better, more reliable software. 
-
-:one: Go to our respository for the course: https://github.com/spsrc/reproducibility-course
-
-:two: In the top-right corner of the page, click `Fork`. 
-
-![practice example 1](./media/practice1.16.png) 
-
-:three: Once this is done, we have a copy of the original repository in our account, so we can work with this copy and make all the changes we need. This way you work in the same way as with your own repository, but with the advantage that you already have a starting point from which you can work on a new idea or propose improvements to the original repository.
-
-:bulb: *If we make some changes, for example to the README.md in this fork, we will see that a message appears indicating that our new "forked" repository is further ahead in "changes" (or commits) than the original, which means that we can either request a merge of our changes into the original via a Pull Request or compare both repositories.*
-
-
-###  1.5. <a name='Addingdifferentbranchestoyourrepository'></a>Adding different branches to your repository
-
-Branching lets you have different versions of a repository at one time.
-
-By default, your repository has one branch named main that is considered to be the definitive branch. You can create additional branches off of main in your repository. You can use branches to have different versions of a project at one time. This is helpful when you want to add new features to a project without changing the main source of code. The work done on different branches will not show up on the main branch until you merge it, which we will cover later in this guide. You can use branches to experiment and make edits before committing them to main.
-
-When you create a branch off the main branch, *you're making a copy*, or *snapshot*, of main as it was at that point in time. If someone else made changes to the main branch while you were working on your branch, you could pull in those updates.
-
-![practice example 1](./media/practice1.3.png) 
-
-This diagram shows:
-
-- The main branch
-- A new branch called feature
-- The journey that feature takes before it's merged into main
-
-Have you saved different versions of a file? Something like:
-
-    story.txt
-    story-edit.txt
-    story-edit-reviewed.txt
-
-Branches accomplish similar goals in GitHub repositories.
-
-In GitHub, use branches for **keeping bug fixes** and **feature work** separate from our main (production) branch. When a change is ready, you can merge branches  into main.
-
-**To create a new branch**
-
-- :one: Click the Code tab of your XXXXX repository. 
-
-![practice example 1](./media/practice1.4.png) 
-
-- :two: Click the drop down at the top of the file list that says `Master` Branch menu.
-
-- :three: Type a branch name, with the name `readme-collaborators`, into the text box to `create` a new branch.
-
-![practice example 1](./media/practice1.5.png) 
-
-- :four: Click Create branch: `readme-collaborators` from main.
-
-Now you have two branches, `main` and `readme-collaborators`. Right now, they look exactly the same. 
-
-We will now make changes to the Branch we have just made `readme-collaborators`. To do this, once selected, edit the `README.md` file and add the following text before the references section:
-
-
-```
-## Contributors
-
-- Manuel Parra-Royón (use here your name)
-
-```
-
-Once the change has been made, we can merge the branch we just changed with the master branch so that we have those changes reflected.
-
-To do this you can go to the main repository page and you will be prompted to merge these changes with the master branch by clicking "Compare and Pull Request"
-	
-![p1.20](./media/practice1.20.png)
-
-Then you will see the screen to Check the merge and create a pull request.
-
-![p1.21](./media/practice1.21.png)
-	
-After that you have to merge it
-	
-![p1.22](./media/practice1.22.png)
-	
-Now, your main branch is updated with the content of the `readme-collaborators`.
-
-###  1.6. <a name='Collaboratingwithotherusersandreposositories'></a>Collaborating with other users and reposositories
+###  1.4. <a name='Collaboratingwithotherusersandrepositories'></a>Collaborating with other users and repositories
 
 ![p1.23](./media/practice1.23.png)
 
@@ -341,4 +240,93 @@ You can add a milestone to track the issue as part of a date based target. A mil
 
 To communicate responsibility, you can assign the issue to a member of your organization.	
 	
+###  1.5. <a name='Addingdifferentbranchestoyourrepository'></a>Adding different branches to your repository
+
+Branching lets you have different versions of a repository at one time.
+
+By default, your repository has one branch named main that is considered to be the definitive branch. You can create additional branches off of main in your repository. You can use branches to have different versions of a project at one time. This is helpful when you want to add new features to a project without changing the main source of code. The work done on different branches will not show up on the main branch until you merge it, which we will cover later in this guide. You can use branches to experiment and make edits before committing them to main.
+
+When you create a branch off the main branch, *you're making a copy*, or *snapshot*, of main as it was at that point in time. If someone else made changes to the main branch while you were working on your branch, you could pull in those updates.
+
+![practice example 1](./media/practice1.3.png) 
+
+This diagram shows:
+
+- The main branch
+- A new branch called feature
+- The journey that feature takes before it's merged into main
+
+Have you saved different versions of a file? Something like:
+
+    story.txt
+    story-edit.txt
+    story-edit-reviewed.txt
+
+Branches accomplish similar goals in GitHub repositories.
+
+In GitHub, use branches for **keeping bug fixes** and **feature work** separate from our main (production) branch. When a change is ready, you can merge branches  into main.
+
+**To create a new branch**
+
+- :one: Click the Code tab of your XXXXX repository. 
+
+![practice example 1](./media/practice1.4.png) 
+
+- :two: Click the drop down at the top of the file list that says `Main/Master` Branch menu.
+
+- :three: Type a branch name, with the name `readme-collaborators`, into the text box to `create` a new branch.
+
+![practice example 1](./media/practice1.5.png) 
+
+- :four: Click Create branch: `readme-collaborators` from main.
+
+Now you have two branches, `main` and `readme-collaborators`. Right now, they look exactly the same. 
+
+We will now make changes to the Branch we have just made `readme-collaborators`. To do this, once selected, edit the `README.md` file and add the following text before the references section:
+
+
+```
+## Contributors
+
+- Manuel Parra-Royón (use here your name)
+
+```
+
+Once the change has been made, we can merge the branch we just changed with the `main` branch so that we have those changes reflected.
+
+To do this you can go to the main repository page and you will be prompted to merge these changes with the `main` branch by clicking "Compare and Pull Request"
+	
+![p1.20](./media/practice1.20.png)
+
+Then you will see the screen to Check the merge and create a pull request.
+
+![p1.21](./media/practice1.21.png)
+	
+After that you have to merge it
+	
+![p1.22](./media/practice1.22.png)
+	
+Now, your main branch is updated with the content of the `readme-collaborators`.
+
+
+###  1.6. <a name='ForkingarepositoryandcreatingaPullRequest'></a>Forking a repository and creating a Pull Request
+
+:bulb: A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+*Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.*
+
+Two options with Fork:
+
+- :construction_worker_woman: Propose changes to someone else's project. For example, you can use forks to propose changes related to fixing a bug or an improvement or new documentation, etc.
+- :fireworks: Use someone else's project as a starting point for your own idea. Open source software is based on the idea that by sharing code, we can make better, more reliable software. 
+
+:one: Go to our respository for the course: https://github.com/spsrc/reproducibility-course
+
+:two: In the top-right corner of the page, click `Fork`. 
+
+![practice example 1](./media/practice1.16.png) 
+
+:three: Once this is done, we have a copy of the original repository in our account, so we can work with this copy and make all the changes we need. This way you work in the same way as with your own repository, but with the advantage that you already have a starting point from which you can work on a new idea or propose improvements to the original repository.
+
+:bulb: *If we make some changes, for example to the README.md in this fork, we will see that a message appears indicating that our new "forked" repository is further ahead in "changes" (or commits) than the original, which means that we can either request a merge of our changes into the original via a Pull Request or compare both repositories.*
 
