@@ -14,15 +14,12 @@
 <HR>
 
 <!-- vscode-markdown-toc -->
-* 2. [Exercises](#Exercises)
-	* 2.1. [Exercise 1 - Create an initial repository. Issues, commits and history](#Exercise1-Createaninitialrepositoryforthissession)
-	* 2.2. [Exercise 2 - How to manage branches and Pull Requests](#Exercise2-Branches)
-	* 2.3. [Exercise 3 - Collaborate in a repo. Fork a repository](#Exercise3-CollaborateFork)
 
-* 2. [Exercises](#exercises)
-	* 2.1. [Exercise 1 - Create an initial repository. Issues, commits and history](#exercise-1-init-repo)
-	* 2.2. [Exercise 2 - How to manage branches and Pull Requests](#exercise-2-branches-prs)
-	* 2.3. [Exercise 3 - Collaborate in a repo. Fork a repository](#exercise-3-collaborate-fork)
+Exercises  
+- [Exercise 1 - Create an initial repository. Commits and history](#exercise1-init-repo)
+- [Exercise 2 - Plan your work: Issues](#exercise2-issues)
+- [Exercise 3 - How to manage branches and Pull Requests](#exercise3-branches-pr)
+- [Exercise 4 - Collaborate in a repo. Fork a repository](#exercise4-collaborate-fork)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -32,9 +29,7 @@
 
 <HR>
 
-## 2. <a name='exercises'></a>Exercises
-
-### 2.1. <a name='exercise-1-init-repo'></a>Exercise 1 - Create an initial repository for this session
+# <a name='exercise1-init-repo'></a>Exercise 1 - Create an initial repository for this session
 
 :pill: **Aim of this exercise**
 In this exercise a new repository will be created and some modifications and data files will be added. Finally, the history of changes made will be reviewed.
@@ -100,8 +95,112 @@ Once this change is made, add a couple more lines of data to the `power.csv` fil
 :checkered_flag: :checkered_flag: After these steps, you can check the version history. 
 > Could you go back to a previous version of the data table?
 
+# <a name='exercise2-issues'></a>Exercise 2 - Plan your work: Issues
 
-###  2.2. <a name='#Exercise2-Branches'></a>Exercise 2 -  Managing forks to collaborate
+
+:arrow_right: Create a file named `observations.txt`. Fill it with these contents:
+
+```
+Target Name      Instrument       Frequency (GHz)    Sensitivity (μJy)
+NGC 4321         VLA             1.4                                60
+M87              ALMA                            230                
+NGC 6946         MeerKAT         1.4              15               
+M51              VLA             3.0                                
+Andromeda        GMRT            0.325            100              
+NGC 253          ALMA                            115                
+```
+
+:arrow_right: Create the following issues and add the descriptions below to them:
+
+**Issue 1: Missing sensitivity for M87**
+
+> The Sensitivity value for M87 is missing. Add 2.5 μJy.
+
+**Issue 2: Empty frequency for NGC 253**
+
+> The Frequency value for NGC 253 is missing. Add 115 GHz.
+
+**Issue 3: Fix sensitivity for M51**
+
+> The Sensitivity value for M51 is missing. Add 5 μJy.
+
+**Issue 4: Fix frequency for M87**
+
+> The Frequency value for M87 is missing. Add 230 GHz.
+
+**Issue 5: Align table formatting**
+
+> The table has inconsistent spacing. Reformat it for proper alignment.
+
+Once the issues are created, make sure to assign yourself to them and continue with the exercise.
+
+:bulb: If you want, you can define a Milestone towards the completion of the exercise.
+
+:arrow_right: Make the required commits to solve all the issues.
+
+:bulb: If you include the phrase "Closes #123" as part of your commit message, Github will automatically close Issue #123 and will indicate which commit closed it.
+
+Your corrected file should look like this:
+
+```
+Target Name      Instrument      Frequency (GHz)    Sensitivity (μJy)
+NGC 4321         VLA             1.4                60
+M87              ALMA            230                2.5
+NGC 6946         MeerKAT         1.4                15
+M51              VLA             3.0                5
+Andromeda        GMRT            0.325              100
+NGC 253          ALMA            115                8
+```
+
+
+# <a name='exercise3-branches-pr'></a>Exercise 3 - How to manage branches and Pull Requests
+
+###  2.3. <a name='#Exercise3-CollaborateFork'></a>Exercise 3 - Managing branches
+
+:pill: **Aim of this exercise**
+Branches allow you to develop features, fix bugs, or experiment with new ideas in a contained area of your repository isolated from the original repository.
+*The idea is to create one branch, add content and update the original repository with the changes.*
+
+<HR>
+
+In this exercise, one branch will be created. Let's say that this new branch will include new features we want to implement or improve to the existing repository.
+
+For this exercise you have to go to the repository *"Forked"* in the previous exercise. 
+
+Once in the *Forked* repository we have to add a new branch.
+
+To do this, create a new branch from the next option on the main screen of your repository and name it **"\<namesurname\>-development"**. 
+
+![exercise example 3](./media/exercise3.1.png)
+
+
+You will see that when you select this icon, all the available branches will appear and you can switch between them to make changes in each one.
+
+![exercise example 3](./media/exercise3.3.png)
+
+Now we are going to switch to the **"\<namesurname\>-development"** branch and to modify the `README.md` file, adding the following lines to the end of it:
+
+```
+# Session 1: Exercises 3 from <namesurname>
+- Created a new branch for development.
+```
+
+:warning: In order to add this text, within the `<namesurname>` string, use the first letter of your first name and your first surname. 
+> :radioactive: :bulb: For example: If your name is `Manuel Parra`, your text will be:
+> ```
+># Session 1: Exercises 3 from mparra
+>Created a new branch for development.
+
+Once this is done, we are going to merge the changes from the **"\<namesurname\>-development"** branch with the main branch. To do this, click on `view branches` and then on `view all branches`:
+
+![exercise example 3](./media/exercise3.4.png)
+
+From here we can merge the changes made in the development branch with the main branch and original repository. Click on the `New pull request` button to do this. 
+
+🏁 🏁 Soon your changes will be accepted by the repository owner.
+
+
+# <a name='exercise4-collaborate-fork'></a>Exercise 4 - Collaborate in a repo. Fork a repository
 
 :pill: **Aim of this exercise**
 In this exercise we are going to use an existing repository to :fork_and_knife: *Fork* and interact with it, and finally propose some changes to be merged with the original existing repository by using a *Pull Request*. 
@@ -159,50 +258,6 @@ Include a title and a short description and then click `Create pull request`:
 ![exercise example 1](./media/exercise2.4.png)
 
 Once this is done, you will have to wait for the original repository owner to review the request and accept it. When this happens you will be notified in a short time :smile: .
-
-###  2.3. <a name='#Exercise3-CollaborateFork'></a>Exercise 3 - Managing branches
-
-:pill: **Aim of this exercise**
-Branches allow you to develop features, fix bugs, or experiment with new ideas in a contained area of your repository isolated from the original repository.
-*The idea is to create one branch, add content and update the original repository with the changes.*
-
-<HR>
-
-In this exercise, one branch will be created. Let's say that this new branch will include new features we want to implement or improve to the existing repository.
-
-For this exercise you have to go to the repository *"Forked"* in the previous exercise. 
-
-Once in the *Forked* repository we have to add a new branch.
-
-To do this, create a new branch from the next option on the main screen of your repository and name it **"\<namesurname\>-development"**. 
-
-![exercise example 3](./media/exercise3.1.png)
-
-
-You will see that when you select this icon, all the available branches will appear and you can switch between them to make changes in each one.
-
-![exercise example 3](./media/exercise3.3.png)
-
-Now we are going to switch to the **"\<namesurname\>-development"** branch and to modify the `README.md` file, adding the following lines to the end of it:
-
-```
-# Session 1: Exercises 3 from <namesurname>
-- Created a new branch for development.
-```
-
-:warning: In order to add this text, within the `<namesurname>` string, use the first letter of your first name and your first surname. 
-> :radioactive: :bulb: For example: If your name is `Manuel Parra`, your text will be:
-> ```
-># Session 1: Exercises 3 from mparra
->Created a new branch for development.
-
-Once this is done, we are going to merge the changes from the **"\<namesurname\>-development"** branch with the main branch. To do this, click on `view branches` and then on `view all branches`:
-
-![exercise example 3](./media/exercise3.4.png)
-
-From here we can merge the changes made in the development branch with the main branch and original repository. Click on the `New pull request` button to do this. 
-
-🏁 🏁 Soon your changes will be accepted by the repository owner.
 
 
 ###  2.4. <a name='Exercise4-Collaboratingwithotherrepositoriesandusers-Homework'></a>Exercise 4 - Collaborating with other repositories and users - Homework
