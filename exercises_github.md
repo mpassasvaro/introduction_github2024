@@ -68,9 +68,9 @@ This repository will be used to practise commits, issues, branching and pull req
 ```
 :arrow_right: Commit the change
 
-### 1.2 Populate the repository with e data table
+### 1.2 Populate the repository with a data table
 
-Once the README is ready, add the following data file named `power.csv`, copying and pasting the following content:
+Once the README is ready, add the following data file named `power.csv`. Press "Add file" button. Copy and paste the following content:
 
 ```
 date,max,avg,min
@@ -92,7 +92,11 @@ Once this change is made, add a couple more lines of data to the `power.csv` fil
 :checkered_flag: :checkered_flag: After these steps, you can check the version history. 
 > Could you go back to a previous version of the data table?
 
+
 # <a name='exercise2-issues'></a>Exercise 2 - Plan and manage your work: Issues
+
+:pill: **Aim of this exercise**
+Issues allow you to track ideas (bugs that need fixing, new implementation ideas, suggested changes, ToDos), allowing interaction and discussions in an organized way. Usually a commit serves to solve a particular issue. *The idea is to plan a series of changes to a daba table by creating Issues, and then commit the changes that solve them*
 
 ### 2.1 Create a text file and populate a list of Github Issues
 
@@ -108,7 +112,7 @@ Andromeda        GMRT            0.325            100
 NGC 253          ALMA                            115                
 ```
 
-:arrow_right: Create the following issues and add the descriptions below to them:
+:arrow_right: Create the following issues and add these descriptions:
 
 **Issue 1: Missing sensitivity for M87**
 
@@ -140,7 +144,7 @@ The open issues is like a ToDo list that tells you what needs to be done. Usuall
 
 :arrow_right: Make the required commits to solve all the issues.
 
-:bulb: If you include the phrase "Closes #123" as part of your commit message, Github will automatically close Issue #123 and will indicate which commit closed it. You can use any of these keywords close, closes, closed, fixes, fixed followed by the commit #id number.
+:bulb: If you include the phrase "Closes #123" as part of your commit message, Github will automatically close Issue #123 and will keep track of which commit closed it. You can use any of these keywords "close", "closes", "closed", "fixes", fixed followed by the commit #id number.
 
 Your corrected file should look like this:
 
@@ -153,6 +157,7 @@ M51              VLA             3.0                5
 Andromeda        GMRT            0.325              100
 NGC 253          ALMA            115                8
 ```
+:arrow_right: Visit the commit history and explore the file at different versions (different commits).
 
 
 # <a name='exercise3-branches-pr'></a>Exercise 3 - How to manage branches and Pull Requests
