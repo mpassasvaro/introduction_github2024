@@ -19,7 +19,7 @@ Exercises
 - [Exercise 1 - Create an initial repository. Commits and history](#exercise1-init-repo)
 - [Exercise 2 - Plan your work: Issues](#exercise2-issues)
 - [Exercise 3 - How to manage branches and Pull Requests](#exercise3-branches-pr)
-- [Exercise 4 - Collaborate in a repo. Fork a repository](#exercise4-collaborate-fork)
+- [Exercise 4 - Collaborate in a repository. Fork a repository](#exercise4-collaborate-fork)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -198,7 +198,7 @@ It is located at a distance of <Distance> Mpc, with a redshift of <Redshift>.
 
 ### 3.2 Create a new branch `update-galaxy-data`.
 
-In the repository main page, click the buttom on the top left labelled as `main`. In the search box write **`update-galaxy-data`** and then press "Create branch update-galaxy-data from main".
+In the repository main page, click the button on the top left labelled as `main`. In the search box write **`update-galaxy-data`** and then press "Create branch update-galaxy-data from main".
 
 ![exercise example 3](./media/exercise3.1.png)
 
@@ -247,7 +247,7 @@ Now your changes leave in the main repository, indicating that they are mature a
 :arrow_right: Navigate to the "Pull Requests" tab and confirm that your PR is now Closed.
 
 
-# <a name='exercise4-collaborate-fork'></a>Exercise 4 - Collaborate in a repo. Fork a repository
+# <a name='exercise4-collaborate-fork'></a>Exercise 4 - Collaborate in a repository. Fork a repository
 
 :pill: **Aim of this exercise**
 In this exercise we are going to use an existing repository to :fork_and_knife: *Fork* and interact with it, and finally propose some changes to be merged with the original existing repository by using a *Pull Request*. 
@@ -255,46 +255,43 @@ In this exercise we are going to use an existing repository to :fork_and_knife: 
 
 <HR>
 
-To do this, we first go to this repository by clicking this link: 
+We are going to contribute to the repository of someone external, so we don't have access to modify it. In particular, we will use this example repository:
 
-https://github.com/manuparra/mparra-csic-github
+[Galaxy Database Project](https://github.com/iaa-so-training/github2024_session1/tree/main)
 
-Then, from the top right menu click the :fork_and_knife: *Fork* button and you will see a screen to select which organisation (of which you are a member) will do this operation, select one of them and in a few moments the repository will be a fork of the original one. If you are not a member of an organisation, it will directly :fork_and_knife: *Fork* the repository.
+This repository needs a lot of improvements, which are described in a series of already existing Issues: [Issuse of Galaxy Database Project](https://github.com/iaa-so-training/github2024_session1/issues).
+
+:arrow_right: Go to the Issues list and identify the ones assigned to you, since you will need to contribute to the repository to correct the described problems.
+
+Since you don't have editing permissions in the original repo to be able to contribute, we will fork (*duplicate*) the repository in our own account, and then we will create a pull request towards the original repository.
+
+### 4.1 Fork an external repository to your account and create a new branch
+
+Navigate to the [Galaxy Database Project](https://github.com/iaa-so-training/github2024_session1/tree/main) repository. From the top right menu click the :fork_and_knife: *Fork* button and you will see a screen to select the owner (usually you, but can also be an organisation) of the forked repository. In a few moments the repository will be a fork of the original one. If you are not a member of an organisation, it will directly :fork_and_knife: *Fork* the repository under your user name.
 
 After that, you should see something like this, where the name of the repository is indicated and below it the original repository of the :fork_and_knife: *Fork*:
 
  ![exercise example 1](./media/exercise2.1.png)
 
 In this moment you are working with a :fork_and_knife: *Forked* copy of the original repository.
-	
-Now you have to make the following change:
 
-- Use the `Add` option to include a `FOLDER` with your name and inside that folder a `README.md` file with the following text:
+:arrow_right: Create a new branch in the forked repository.
 
+:bulb: If in doubt, see Exercise 3.2 above. Or navigate to "See all branches" and click "New Branch".
 
-:warning: In order to create this `FOLDER`, use the first letter of your first name and your first surname. 
-> :radioactive: :bulb: For example: If your name is `Manuel Parra`, your FOLDER and FILE path will be:
-> `mparra/README.md`
-> :warning: Use a path to create the file.
+### 4.2 Edit your fork to solve the issues from the original repository
 
-Paste the following text to the 
+Find the relevant issues in the main repository. Edit the relevant files and modify them following the specific instructions in the repository. 
 
-```
-# Course of Reproduciblity @CSIC
+:arrow_right: make one commit that specifically solves one issue. Write a clear and specific commit message and add at the end "Solves #X" with X being the number indentifier of the issue.
 
-In this course I will learn:
-- Control version platforms like GitHub, containers and more!
-
-```
-
-:arrow_right: `Commit` the change and add a short description of this change with the following text: `Updated folder and README.md`
+### 4.3 Propose to merge your changes with the original repository
 
 Now it is time to contribute the changes made by making a *Pull Request*, i.e. requesting the original repository that we *"would like"* to include these changes in the original repository. 
 
 To do this go to the main repository screen and select the following option:
 
  ![exercise example 1](./media/exercise2.2.png)
-
 
 Doing this, it checks that there are no conflicts and you can propose the change by including a comment about the changes you want to push to the original repository. 
 
@@ -306,38 +303,25 @@ Include a title and a short description and then click `Create pull request`:
 
 Once this is done, you will have to wait for the original repository owner to review the request and accept it. When this happens you will be notified in a short time :smile: .
 
+:arrow_right: Go to the original repository and explore both the Issues and the Pull Request tabs. Check the status of your PR.
 
-###  2.4. <a name='Exercise4-Collaboratingwithotherrepositoriesandusers-Homework'></a>Exercise 4 - Collaborating with other repositories and users - Homework
+:bulb: Navigate to the "Insights" tab and open "Networks". There you will see the full story of the commits and their flow from different forks.
 
-:pill: **Aim of this exercise**
-The aim of this exercise is for the student to be able to interact with the repository by collaborating with other users through the management of `Issues` and working with copies of repositories among the students.
+As you can image, the full flow of a large package can be very complicated and intricated. This methodology ensures that contributors can collaborate effienctly. 
 
-<HR>
+### 4.4 Contribute further to the repository
 
-For this exercise you need to use the list of users and repositories listed in [this link](https://hackmd.io/s/B1zp3lJm5). On this page, go to exercise 4 and find your name and the tasks you have to perform with each of these repositories.
+If you have time, explore the remaining Issues. Assign one to you to let the other contributors know that you want to work on it. You may want to write a new comment to indicate so. Repeat the cycle: create a branch in your forked repo, apply changes and open a Pull request.
 
-The tasks to perform for this exercise are as follows:
+Feel free to suggest additional changes to any of the existing files, the Readme, etc.
 
-- :one: Find your name in the list on this [link](https://hackmd.io/s/B1zp3lJm5).
-- :two: Two tasks will appear, 
-  - a) Make a fork of the repository listed below your name and then, 
-  - b) Create an Issue on the second repository.
+:bulb: You will need to synchronize your forked repo frequently, since changes may had happened in the original repo (*upstream*).
 
 
-**For the first :one: repository** you have to make a fork of this repository and add a **directory** with your `namesurname` and a **file** inside named `plot.py` containing the following:
+# End of the course
 
-```
-import matplotlib.pyplot as plt
-plt.plot([1, 2, 3, 4])
-plt.ylabel('some numbers')
-plt.show()	
-```
-Once this is done you must `Create a Pull Request` with this change to the original repository.
-	
-**For the second :two: repository** you have to create at least one issue to the repository, to make one of the following changes, which the **repository owner** must do:
-- a) Request to include a file with a science image.
-- b) Request to include a data file.
-- c) Request to add more information to README.md related to the aims.
-- d) Report a typo for correction 
+Congratulations for finishing the exercises. Now you have a final task to confirm that you completed the course:
 
-:bulb: *Use the @ to type the name of the repository owner for direct notification. For example: @manuparra*.
+:arrow_right: In the course repository [introduction_github2024](https://github.com/iaa-so-training/introduction_github2024/tree/main), edit the attendants file to add your name. You will receive an attendance certificate only if your name is there.
+
+:bulb: If you find some of the material of the course can be improved, please open an Issue and, if possible, make a PR with your contribution to improve the contents.
