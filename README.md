@@ -4,6 +4,11 @@ This session is a hands-on introduction to using GitHub for scientific research 
 
 The main page of the event is in Indico [Introduction to Github](https://indico.iaa.csic.es/e/github2024 ). This repository is only for the material.
 
+# Contents
+
+- [Training material](tutorial_github.md): file with details and more in depth descriptions. This material is for reference, in case you need to revisit content in the future.
+- [Course exercises](exercises_github.md): exercises to be solved during the in-person session. 
+
 # Information
 
 - This event is a hands-on session on how to use GitHub. It will be given by Manuel Parra and Javier Moldón, from the IAA-CSIC.
