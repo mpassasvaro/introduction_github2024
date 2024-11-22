@@ -9,11 +9,6 @@ The main page of the event is in Indico [Introduction to Github](https://indico.
 - [Training material](tutorial_github.md): file with details and more in depth descriptions. This material is for reference, in case you need to revisit content in the future.
 - [Course exercises](exercises_github.md): exercises to be solved during the in-person session. 
 
-# Information
-
-- This event is a hands-on session on how to use GitHub. It will be given by Manuel Parra and Javier Moldón, from the IAA-CSIC.
-- This training event will be primarily held in-person at the IAA. While remote participation is available, in-person attendees will be prioritized given the interactive and hands-on nature of the session.
-
 # Resources
 
 ### Documentations and utilities
@@ -39,6 +34,10 @@ The main page of the event is in Indico [Introduction to Github](https://indico.
 - To learn more: [Github Guides](https://guides.github.com/)
 -  You can also write and host your personal webpage in Github: [examples](https://github.com/topics/personal-website)
 
+# Information
+
+- This event is a hands-on session on how to use GitHub. It will be given by Manuel Parra and Javier Moldón, from the IAA-CSIC.
+- This training event will be primarily held in-person at the IAA. While remote participation is available, in-person attendees will be prioritized given the interactive and hands-on nature of the session.
 
 # Organizing committee
 
