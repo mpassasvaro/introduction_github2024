@@ -70,7 +70,11 @@ This repository will be used to practise commits, issues, branching and pull req
 
 ### 1.2 Populate the repository with a data table
 
-Once the README is ready, add the following data file named `power.csv`. Press "Add file" button. Copy and paste the following content:
+Once the README is ready, add the following data file named `power.csv`. Press "Add file" and "+ Create new file". 
+
+![image](https://github.com/user-attachments/assets/59ac9aec-3eb0-4123-9d4d-84eff1c51a93)
+
+Copy and paste the following content to the new file:
 
 ```
 date,max,avg,min
