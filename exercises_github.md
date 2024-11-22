@@ -85,20 +85,33 @@ date,max,avg,min
 
 :arrow_right: Commit the change
 
-Once this change is made, add a couple more lines of data to the `power.csv` file:
+### 1.3 Edit an existing file
+
+Once this change is made, navigate to the file and Edit it pressing on this button:
+
+![image](https://github.com/user-attachments/assets/f8fa8fc3-b2c5-4014-a12f-b72e49bd77d5)
+
+Add a couple more lines of data to the `power.csv` file
 
 ```
 2021-10-05 15:45,5287.0,4123.0,3952.0
 2021-10-05 16:00,5234.0,4122.0,3965.0
 ```
+
+:bulb: Press "Preview" to see a direct before/after comparison. Green are new content, red means removed content.
+
 :arrow_right: Commit the change
 
 :checkered_flag: :checkered_flag: After these steps, you can check the version history. 
 
 ![image](https://github.com/user-attachments/assets/35c05caa-9b97-4e18-9ff9-533bc4b1d3ef)
 
-> Could you go back to a previous version of the data table?
+:arrow_right: Visit the commit history and explore the file at different versions (different commits). Also, click on the commit id to see the changes.
 
+![image](https://github.com/user-attachments/assets/8832dcab-18df-48ae-b2a5-712981871364)
+
+
+👩‍🎓 For advanced students: find the repo of your companion, and add issues asking them to modify their repo. Give clear instructions. Your companion may want to discuss how the issue should be implemented.
 
 # <a name='exercise2-issues'></a>Exercise 2 - Plan and manage your work: Issues
 
@@ -165,6 +178,8 @@ Andromeda        GMRT            0.325              100
 NGC 253          ALMA            115                8
 ```
 :arrow_right: Visit the commit history and explore the file at different versions (different commits).
+
+![image](https://github.com/user-attachments/assets/8832dcab-18df-48ae-b2a5-712981871364)
 
 
 # <a name='exercise3-branches-pr'></a>Exercise 3 - How to manage branches and Pull Requests
