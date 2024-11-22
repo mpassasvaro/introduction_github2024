@@ -234,7 +234,7 @@ You will see that when you select this icon, all the available branches will app
 
 Now we are going to switch to the **`update-galaxy-data`** branch and to modify the `report.tex` file. Replace placeholders (\<Galaxy Name\>, \<Type\>, \<Distance\>, \<Redshift\>) with real data for a galaxy of your choice (e.g., "NGC 4321," "Spiral," "16.8," "0.007").
 
-:arrow_right: Create a commit to modify the file. Write an informative commit message.
+:arrow_right: Create a commit to modify the file. Write an informative commit message. Note that the commit window will inform you about the branch that will contain this commit.
 
 ### 3.4 Prepare the pull request
 
@@ -244,19 +244,21 @@ You will notice that in the main repository there will be a warning indicating t
 
 ![exercise example 3](./media/exercise3.4.png)
 
-From here we can merge the changes made in the development branch with the main branch and original repository. Click on the `New pull request` button to do this.
+After selecting the relevant branch, we can merge the changes made with the main branch. Click on the `New pull request` button to do this.
 
-A Pull Request has a title, which should be clear and informative, and a description that explains the nature of the changes. This is important when collaborating with other people (remember, consider the future you as a collaborator).
+A Pull Request (PR) has a title, which should be clear and informative, and a description that explains the nature of the changes. This is important when collaborating with other people (remember, consider the future you as a collaborator). A PR may consist of multiple commits.
 
 :arrow_right: Create the Pull Request
 
-:bulb: Note the message next to the green buttom Open at the top: "\<your user\> wants to merge 1 commit into main from update-galaxy-data". This is important to keep track of the origin and destination of the PR.
+:bulb: Note the informative message on the top, where you can see which branch do you propose to merge (e.g., new-branch) and where it will be merged (a.g., main). You will see something similar to: "\<your user\> wants to merge 1 commit into main from update-galaxy-data". This is important to keep track of the origin and destination of the PR.
 
-:arrow_right: Navigate to the "Pull Requests" tab and confirm that your PR is there and it is Open
+![image](https://github.com/user-attachments/assets/00f30583-70b9-4f7b-bb7d-55f2b76228ea)
+
+:arrow_right: Navigate to the "Pull Requests" tab and confirm that your PR is there and it is Open.
 
 ### 3.4 Merge pull request
 
-Inside the Pull Request, Github will verify that there are no conflicts (i.e., that nobody else modified the same part of the file(s) you modified inside the branch). Then you should see the message "This branch has no conflicts with the base branch.  Merging can be performed automatically". 
+Inside the new *Pull Request*, Github will verify that there are no conflicts (i.e., that nobody else modified the same part of the file(s) you modified inside the branch). Then you should see the message "This branch has no conflicts with the base branch.  Merging can be performed automatically". 
 
 :arrow_right: Press merge pull request
 
@@ -264,7 +266,7 @@ Inside the Pull Request, Github will verify that there are no conflicts (i.e., t
 
 Now your changes leave in the main repository, indicating that they are mature and ready to be seen by everyone. 
 
-:bulb: since all commits are not part of the main repository, you can delete the branch if you will not need it anymore.
+:bulb: Since all commits are now part of the main repository, you can delete the branch if you want, since you will not need it anymore.
 
 :arrow_right: Navigate to the "Pull Requests" tab and confirm that your PR is now Closed.
 
@@ -305,7 +307,7 @@ In this moment you are working with a :fork_and_knife: *Forked* copy of the orig
 
 Find the relevant issues in the main repository. Edit the relevant files and modify them following the specific instructions in the repository. 
 
-:arrow_right: make one commit that specifically solves one issue. Write a clear and specific commit message and add at the end "Solves #X" with X being the number indentifier of the issue.
+:arrow_right: make one commit that specifically solves one issue. Write a clear and specific commit message.
 
 ### 4.3 Propose to merge your changes with the original repository
 
@@ -315,11 +317,13 @@ To do this go to the main repository screen and select the following option:
 
  ![exercise example 1](./media/exercise2.2.png)
 
-Doing this, it checks that there are no conflicts and you can propose the change by including a comment about the changes you want to push to the original repository. 
+Doing this, it checks that there are no conflicts and you can propose the change by including a comment about the changes you want to push to the original repository.
 
 ![exercise example 1](./media/exercise2.3.png)
 
-Include a title and a short description and then click `Create pull request`:
+Include a title and a short description and then click `Create pull request`
+
+:bulb: You can add "Solves #X" with X being the number indentifier of the issue in the original repository.
 
 ![exercise example 1](./media/exercise2.4.png)
 
@@ -333,7 +337,7 @@ As you can image, the full flow of a large package can be very complicated and i
 
 ### 4.4 Contribute further to the repository
 
-If you have time, explore the remaining Issues. Assign one to you to let the other contributors know that you want to work on it. You may want to write a new comment to indicate so. Repeat the cycle: create a branch in your forked repo, apply changes and open a Pull request.
+If you have time, explore the remaining Issues. Assign one to you to let the other contributors know that you want to work on it. You may want to write a new comment to indicate so. Repeat the cycle: create a branch (this is optional, since the changes are simple) in your forked repo, commit changes and open a Pull request.
 
 Feel free to suggest additional changes to any of the existing files, the Readme, etc.
 
