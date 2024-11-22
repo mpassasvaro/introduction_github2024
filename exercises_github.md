@@ -94,6 +94,9 @@ Once this change is made, add a couple more lines of data to the `power.csv` fil
 :arrow_right: Commit the change
 
 :checkered_flag: :checkered_flag: After these steps, you can check the version history. 
+
+![image](https://github.com/user-attachments/assets/35c05caa-9b97-4e18-9ff9-533bc4b1d3ef)
+
 > Could you go back to a previous version of the data table?
 
 
