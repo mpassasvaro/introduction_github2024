@@ -1,26 +1,17 @@
 # Repository management and collaborative science platforms:  GitHub
 
 **Table of contents**
-<HR>
 
-<!-- vscode-markdown-toc -->
-* 1. [Session content](#Sessioncontent)
-        * 1.1. [Creating a new repository and configure the main options](#Creatinganewrepositoryandconfigurethemainoptions)
-        * 1.2. [Adding content to our repository](#Addingcontenttoourrepository)
-        * 1.3. [Working with the version history](#Workingwiththeversionhistory)
-        * 1.4. [Collaborating with other users and repositories](#Collaboratingwithotherusersandrepositories)
-        * 1.5. [Adding different branches to your repository](#Addingdifferentbranchestoyourrepository)
-        * 1.6. [Forking a repository and creating a Pull Request](#ForkingarepositoryandcreatingaPullRequest)
+[0. Pre-requisites. Create a Github account](#createaccount)  
+[1. Creating a new repository and configure the main options](#Creatinganewrepositoryandconfigurethemainoptions)  
+[2. Adding content to our repository](#Addingcontenttoourrepository)  
+[3. Working with the version history](#Workingwiththeversionhistory)  
+[4. Collaborating with other users and repositories](#Collaboratingwithotherusersandrepositories)  
+[5. Adding different branches to your repository](#Addingdifferentbranchestoyourrepository)  
+[6. Forking a repository and creating a Pull Request](#ForkingarepositoryandcreatingaPullRequest)  
 
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
 
-<HR>
-
-**Pre-requisites. Create a Github account:**
+# 0. <a name='createaccount'></a>Pre-requisites. Create a Github account
 
 GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
@@ -54,9 +45,7 @@ To create a GitHub account for the first time, follow the six steps below.
 
 
 
-##  1. <a name='Sessioncontent'></a>Session content
-
-###  1.1. <a name='Creatinganewrepositoryandconfigurethemainoptions'></a>Creating a new repository and configure the main options
+# 1. <a name='Creatinganewrepositoryandconfigurethemainoptions'></a>Creating a new repository and configure the main options
 
 
 We want to create a repository named `hello-world` where you can store ideas, resources, or even share and discuss things with others. To do that:
@@ -94,7 +83,7 @@ We will see the initial screen of our repository and we will explain each sectio
 ![practice example 1](./media/practice1.11.jpg) 
 
 
-###  1.2. <a name='Addingcontenttoourrepository'></a>Adding content to our repository. Commits.
+##  2. <a name='Addingcontenttoourrepository'></a>Adding content to our repository. Commits.
 
 A `commit` is like a snapshot of all the files in your project at a particular point in time.
 
@@ -153,7 +142,7 @@ This is my first repository to store information from my research on XXXX.
 ![practice example 1](./media/practice1.15.png) 
 
 
-###  1.3. <a name='Workingwiththeversionhistory'></a>Working with the version history
+##  3. <a name='Workingwiththeversionhistory'></a>Working with the version history
 
 Now it's time to make some more changes by adding a folder and inside that folder include a file with this content. Copy and paste the content into the file you want to edit and add it to the repository.
 
@@ -189,7 +178,7 @@ In this list we can review what changes we have made during the lifetime of the 
 
 :three: See the status of the repository at this point.
 
-###  1.4. <a name='Collaboratingwithotherusersandrepositories'></a>Collaborating with other users and repositories
+##  4. <a name='Collaboratingwithotherusersandrepositories'></a>Collaborating with other users and repositories
 
 ![p1.23](./media/practice1.23.png)
 
@@ -240,7 +229,7 @@ You can add a milestone to track the issue as part of a date based target. A mil
 
 To communicate responsibility, you can assign the issue to a member of your organization.	
 	
-###  1.5. <a name='Addingdifferentbranchestoyourrepository'></a>Adding different branches to your repository
+##  5. <a name='Addingdifferentbranchestoyourrepository'></a>Adding different branches to your repository
 
 Branching lets you have different versions of a repository at one time.
 
@@ -309,7 +298,7 @@ After that you have to merge it
 Now, your main branch is updated with the content of the `readme-collaborators`.
 
 
-###  1.6. <a name='ForkingarepositoryandcreatingaPullRequest'></a>Forking a repository and creating a Pull Request
+## 6. <a name='ForkingarepositoryandcreatingaPullRequest'></a>Forking a repository and creating a Pull Request
 
 :bulb: A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
 
