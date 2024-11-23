@@ -236,7 +236,7 @@ Now we are going to switch to the **`update-galaxy-data`** branch and to modify 
 
 :arrow_right: Create a commit to modify the file. Write an informative commit message. Note that the commit window will inform you about the branch that will contain this commit.
 
-### 3.4 Prepare the pull request
+### 3.4 Prepare the pull request (PR)
 
 Once this is done, we are going to merge the changes from the **`update-galaxy-data`** branch with the **`main`** branch.
 

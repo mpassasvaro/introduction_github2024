@@ -309,13 +309,13 @@ Two options with Fork:
 - :construction_worker_woman: Propose changes to someone else's project. For example, you can use forks to propose changes related to fixing a bug or an improvement or new documentation, etc.
 - :fireworks: Use someone else's project as a starting point for your own idea. Open source software is based on the idea that by sharing code, we can make better, more reliable software. 
 
-:one: Go to our respository for the course: https://github.com/spsrc/reproducibility-course
+:one: For example, go to this respository: https://github.com/spsrc/reproducibility-course
 
 :two: In the top-right corner of the page, click `Fork`. 
 
 ![practice example 1](./media/practice1.16.png) 
 
-:three: Once this is done, we have a copy of the original repository in our account, so we can work with this copy and make all the changes we need. This way you work in the same way as with your own repository, but with the advantage that you already have a starting point from which you can work on a new idea or propose improvements to the original repository.
+:three: Once this is done, we have a copy of the original repository in your account, so you can work with this copy and make all the changes we need. This way you work in the same way as with your own repository, but with the advantage that you already have a starting point from which you can work on a new idea or propose improvements to the original repository.
 
-:bulb: *If we make some changes, for example to the README.md in this fork, we will see that a message appears indicating that our new "forked" repository is further ahead in "changes" (or commits) than the original, which means that we can either request a merge of our changes into the original via a Pull Request or compare both repositories.*
+:bulb: *If someone make some changes in the original repository, for example the README.md in this fork, you will see that a message appears indicating that your new "forked" repository is further ahead in "changes" (or commits) than the original, which means that we can either request a merge of our changes into the original via a Pull Request or compare both repositories.*
 

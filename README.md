@@ -6,16 +6,17 @@ The main page of the event is in Indico [Introduction to Github](https://indico.
 
 # Contents
 
-- [Training material](tutorial_github.md): file with details and more in depth descriptions. This material is for reference, in case you need to revisit content in the future.
-- [Course exercises](exercises_github.md): exercises to be solved during the in-person session. 
+- 📖 [Training material](tutorial_github.md): file with details and more in depth descriptions. This material is for reference, in case you need to revisit content in the future.
+- 🔭 [Course exercises](exercises_github.md): exercises to be solved during the in-person session. 
 
 # Resources
 
 ### Documentations and utilities
 
 - [Github Documentation](https://docs.github.com/en)
-- [Official documentation on Githug Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues)
+- [Official documentation on Github Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues)
 - [Readme editor](https://readme.so/editor)
+- [Using Github Visual Code web editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)
 - [Open Science Droplets](https://droplets-spsrc.readthedocs.io/github/)
 - [Learn Git branching](https://learngitbranching.js.org/) (advanced, requires git)
 
@@ -32,7 +33,7 @@ The main page of the event is in Indico [Introduction to Github](https://indico.
 - A whole book written in Github: [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) is in this Github [repository](https://github.com/jakevdp/PythonDataScienceHandbook).
 - You can also write papers on Github! [Mutiband Lomb-Scargle Periodograms](http://jakevdp.github.io/multiband_LS/), [repository](https://github.com/jakevdp/multiband_LS). In this example, the author even received feedback from a world expert on the topic (Jeff Scargle!) in a Github [issue](https://github.com/jakevdp/multiband_LS/issues/1) while writing the paper. Check this talk explaining the experience [In Defense of Extreme Openness](https://zenodo.org/record/49577)
 - To learn more: [Github Guides](https://guides.github.com/)
--  You can also write and host your personal webpage in Github: [examples](https://github.com/topics/personal-website)
+- You can also write and host your personal webpage in Github: [examples](https://github.com/topics/personal-website)
 
 # Information
 
@@ -43,4 +44,4 @@ The main page of the event is in Indico [Introduction to Github](https://indico.
 
 - Laura Darriba (IAA-CSIC)
 - Javier Moldón (IAA-CSIC)
-- Manuel Darriba (IAA-CSIC)
+- Manuel Parra (IAA-CSIC)
