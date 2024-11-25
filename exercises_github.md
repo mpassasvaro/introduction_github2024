@@ -285,7 +285,11 @@ We are going to contribute to the repository of someone external, so we don't ha
 
 This repository needs a lot of improvements, which are described in a series of already existing Issues: [Issuse of Galaxy Database Project](https://github.com/iaa-so-training/github2024_session1/issues).
 
-:arrow_right: Go to the Issues list and identify the ones assigned to you, since you will need to contribute to the repository to correct the described problems.
+:arrow_right: Go to the Issues list and identify one that would like to solve and write a new comment saying that you want to work on this problem.
+
+:bulb: since you are not a member of the repository, you cannot be assigned an issues. However, once you commented, Github will allow the owner to assign the issue to you. 
+
+Note that more than one person may be interacting with the issue at the same time, so the owner will decide one or more people will be assigned. This assignation is just a formatlity that helps organizing big repositories, but you can still open a Pull Request at any time.
 
 Since you don't have editing permissions in the original repo to be able to contribute, we will fork (*duplicate*) the repository in our own account, and then we will create a pull request towards the original repository.
 
@@ -323,7 +327,7 @@ Doing this, it checks that there are no conflicts and you can propose the change
 
 Include a title and a short description and then click `Create pull request`
 
-:bulb: You can add "Solves #X" with X being the number indentifier of the issue in the original repository.
+:bulb: You can add "Solves #X" with X being the number indentifier of the issue in the original repository (only if you are a member of the repository, otherwise only the contributors can close an issue).
 
 ![exercise example 1](./media/exercise2.4.png)
 
