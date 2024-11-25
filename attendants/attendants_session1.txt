@@ -1,6 +1,8 @@
 The following people have completed the Introduction to Github 2024 course:
 
+- Elena Fernández García
 - Ailing Zeng
 - Javier Cerezuela Mora
 - José María Gómez-Limón Gallardo
 - Giovanni MIROUH
+
