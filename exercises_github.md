@@ -50,7 +50,14 @@ In the following image you can see the options to select for the creation of the
 
  ![exercise example 1](./media/exercise1.1.png)
 
-Add some information to your repository by modyfing the `README.md` file. Use the following text to update the `README.md` file.
+
+Now, explore your repository. You will have only two files: LICENSE and README.md. Let's add some information about your repository by modyfing the `README.md` file. Click on the file and then on the edit button on the right.
+
+![image](https://github.com/user-attachments/assets/8675eccd-0d48-4d83-a274-56e1c085daa4)
+
+![image](https://github.com/user-attachments/assets/eef45687-b0bc-4991-893c-d521211f7eba)
+
+Use the following text to update the `README.md` file.
 
 ```
 ## SO-IAA training course: Introduction to Github
