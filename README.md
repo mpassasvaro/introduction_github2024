@@ -20,6 +20,11 @@ The main page of the event is in Indico [Introduction to Github](https://indico.
 - [Open Science Droplets](https://droplets-spsrc.readthedocs.io/github/) general resources on github, git, notebooks, etc
 - [Learn Git branching](https://learngitbranching.js.org/) This is **advanced**, requires git
 
+### Platforms
+- [Github](https://github.com/)
+- [Gitlab](https://gitlab.com/)
+- [Git CSIC](https://git.csic.es/)
+
 ### Repository examples
 
 - Software project: [PyGaia](https://github.com/agabrown/PyGaia)
