@@ -65,7 +65,7 @@ Use the following text to update the `README.md` file.
 This is the working repository for the course exercises.
 This repository will be used to practise commits, issues, branching and pull requests. 
 
-# Session 1
+# Session 2
 
 ## Creating a new repository and adding content
 
@@ -288,9 +288,9 @@ In this exercise we are going to use an existing repository to :fork_and_knife: 
 
 We are going to contribute to the repository of someone external, so we don't have access to modify it. In particular, we will use this example repository:
 
-[Galaxy Database Project](https://github.com/iaa-so-training/github2024_session1/tree/main)
+[Galaxy Database Project](https://github.com/iaa-so-training/github2024_session2/tree/main)
 
-This repository needs a lot of improvements, which are described in a series of already existing Issues: [Issuse of Galaxy Database Project](https://github.com/iaa-so-training/github2024_session1/issues).
+This repository needs a lot of improvements, which are described in a series of already existing Issues: [Issuse of Galaxy Database Project](https://github.com/iaa-so-training/github2024_session2/issues).
 
 :arrow_right: Go to the Issues list and identify one that would like to solve and write a new comment saying that you want to work on this problem.
 
@@ -302,7 +302,7 @@ Since you don't have editing permissions in the original repo to be able to cont
 
 ### 4.1 Fork an external repository to your account and create a new branch
 
-Navigate to the [Galaxy Database Project](https://github.com/iaa-so-training/github2024_session1/tree/main) repository. From the top right menu click the :fork_and_knife: *Fork* button and you will see a screen to select the owner (usually you, but can also be an organisation) of the forked repository. In a few moments the repository will be a fork of the original one. If you are not a member of an organisation, it will directly :fork_and_knife: *Fork* the repository under your user name.
+Navigate to the [Galaxy Database Project](https://github.com/iaa-so-training/github2024_session2/tree/main) repository. From the top right menu click the :fork_and_knife: *Fork* button and you will see a screen to select the owner (usually you, but can also be an organisation) of the forked repository. In a few moments the repository will be a fork of the original one. If you are not a member of an organisation, it will directly :fork_and_knife: *Fork* the repository under your user name.
 
 After that, you should see something like this, where the name of the repository is indicated and below it the original repository of the :fork_and_knife: *Fork*:
 
