@@ -1,5 +1,7 @@
 The following people have completed the Introduction to Github 2024 course:
 
+Session 1 on November 26:
+
 - Alberto Mendi Martos
 - Miguel Cano González
 - Denise Sammartino
@@ -13,3 +15,6 @@ The following people have completed the Introduction to Github 2024 course:
 - Javier Cerezuela Mora
 - José María Gómez-Limón Gallardo
 - Giovanni MIROUH
+
+Session 2 on December 11:
+- 
